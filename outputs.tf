@@ -1,4 +1,4 @@
 output "webapp_url" {
-  value = azurerm_app_service.webapp.default_site_hostname
+  description = "Web App URL"
+  value       = "https://${azurerm_linux_web_app.webapp.default_hostname}"
 }
-
